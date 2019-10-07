@@ -10,7 +10,7 @@ export default class ColorBox extends Component {
     console.log(this.props.opacity)
 
     if (this.props.opacity > 0.3) {
-      let rounded = parseFloat(newValue.toFixed(1))
+      {let rounded = parseFloat(newValue.toFixed(1))}
       console.log (React.version)
       console.log(rounded)
       console.log(typeof rounded)
