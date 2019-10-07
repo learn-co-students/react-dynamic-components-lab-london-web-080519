@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import BlogPost from './BlogPost.js'
+import Comment from './Comment.js'
 import ColorBox from './ColorBox.js'
 
 class App extends Component {
@@ -11,6 +12,7 @@ class App extends Component {
     return (
       <div id="app">
           <BlogPost />
+          <Comment />
           <div id="seperator"></div>
           <div className="wrapper">
             <ColorBox opacity={1} />
