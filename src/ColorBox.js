@@ -1,14 +1,11 @@
 import React, { Component } from 'react';
 
-let opacityValue = 1.1
-
 export default class ColorBox extends Component {
   render() {
-    opacityValue -= 0.1
-    const newOpacity = this.props.opacity * 2
-    if (this.props.opacity < 100) {
+    const newOpacity = this.props.opacity - 0.1
+    if (this.props.opacity > 0.2) {
       return (
-        <div className="color-box" style={{opacity: opacityValue}}>
+        <div className="color-box" style={{opacity: newOpacity + 0.1}}>
           <ColorBox opacity={newOpacity} /> 
         </div>
       )
